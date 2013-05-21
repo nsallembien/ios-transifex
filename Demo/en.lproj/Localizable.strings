@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  Demo
+
+  Created by Nico Sallembien on 5/20/13.
+  Copyright (c) 2013 Transifex. All rights reserved.
+*/
+
+/* The greeting format displayed */
+"HELLO" = "Hello, %@!";
+
+/* The default name in the format */
+"WORLD" = "World";
+
+
+

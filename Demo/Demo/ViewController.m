@@ -34,9 +34,9 @@
     
     NSString *nameString = self.userName;
     if ([nameString length] == 0) {
-        nameString = @"World";
+        nameString = NSLocalizedString(@"WORLD", @"The default name in the format");
     }
-    NSString *greeting = [[NSString alloc] initWithFormat:@"Hello, %@!", nameString];
+    NSString *greeting = [[NSString alloc] initWithFormat:NSLocalizedString(@"HELLO", @"The greeting format displayed"), nameString];
     self.label.text = greeting;
 
 }

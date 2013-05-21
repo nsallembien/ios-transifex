@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		032678C3174B0EF70088B313 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032678C5174B0EF70088B313 /* Localizable.strings */; };
 		03E06AAF174B06A200033ADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E06AAE174B06A200033ADE /* UIKit.framework */; };
 		03E06AB1174B06A200033ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E06AB0174B06A200033ADE /* Foundation.framework */; };
 		03E06AB3174B06A200033ADE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E06AB2174B06A200033ADE /* CoreGraphics.framework */; };
@@ -22,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		032678BE174B0C390088B313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		032678BF174B0CBC0088B313 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		032678C0174B0CBC0088B313 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		032678C4174B0EF70088B313 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		032678C6174B0F040088B313 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		03E06AAB174B06A200033ADE /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E06AAE174B06A200033ADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03E06AB0174B06A200033ADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,6 +61,7 @@
 		03E06AA2174B06A200033ADE = {
 			isa = PBXGroup;
 			children = (
+				032678C5174B0EF70088B313 /* Localizable.strings */,
 				03E06AB4174B06A200033ADE /* Demo */,
 				03E06AAD174B06A200033ADE /* Frameworks */,
 				03E06AAC174B06A200033ADE /* Products */,
@@ -143,6 +149,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 03E06AA2174B06A200033ADE;
 			productRefGroup = 03E06AAC174B06A200033ADE /* Products */;
@@ -164,6 +171,7 @@
 				03E06AC3174B06A200033ADE /* Default@2x.png in Resources */,
 				03E06AC5174B06A200033ADE /* Default-568h@2x.png in Resources */,
 				03E06AC8174B06A200033ADE /* MainStoryboard.storyboard in Resources */,
+				032678C3174B0EF70088B313 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,10 +191,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		032678C5174B0EF70088B313 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032678C4174B0EF70088B313 /* en */,
+				032678C6174B0F040088B313 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		03E06AB7174B06A200033ADE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				03E06AB8174B06A200033ADE /* en */,
+				032678C0174B0CBC0088B313 /* fr */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -195,6 +213,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				032678BE174B0C390088B313 /* Base */,
+				032678BF174B0CBC0088B313 /* fr */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
