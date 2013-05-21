@@ -1,4 +1,0 @@
-/* Localized versions of Info.plist keys */
-
-/* The name of the app displayed on the device*/
-CFBundleDisplayName = "La démo";
