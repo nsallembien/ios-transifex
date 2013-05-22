@@ -43,6 +43,7 @@
 		032F20FA174C3DF800D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
 		032F20FF174C441000D7C7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		032F2101174C441500D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		032F2103174C48E300D7C7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +208,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				032F20F7174C3DB800D7C7E6 /* Base */,
+				032F2103174C48E300D7C7E6 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
