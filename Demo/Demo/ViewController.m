@@ -31,7 +31,7 @@
 - (IBAction)changeLocale:(id)sender {
 
     self.userLocale = [[[NSLocale preferredLanguages] objectAtIndex:0] substringToIndex:2];
-    NSString *localeText = [[NSString alloc] initWithFormat:@"Current Locale: %@", self.userLocale];
+    NSString *localeText = [[NSString alloc] initWithFormat:NSLocalizedString(@"CURRENT_LOCALE_FORMAT", "The string label"), self.userLocale];
     self.localeLabel.text = localeText;
 }
 @end
