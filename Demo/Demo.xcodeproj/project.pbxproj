@@ -17,9 +17,9 @@
 		032F20E4174C308200D7C7E6 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 032F20E3174C308200D7C7E6 /* Default@2x.png */; };
 		032F20E6174C308200D7C7E6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 032F20E5174C308200D7C7E6 /* Default-568h@2x.png */; };
 		032F20EC174C308200D7C7E6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 032F20EB174C308200D7C7E6 /* ViewController.m */; };
-		032F20F8174C3DB800D7C7E6 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032F20F6174C3DB800D7C7E6 /* MainStoryboard.storyboard */; };
 		032F20FB174C3DF800D7C7E6 /* MainStoryboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032F20F9174C3DF800D7C7E6 /* MainStoryboard.strings */; };
 		032F20FE174C441000D7C7E6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 032F2100174C441000D7C7E6 /* Localizable.strings */; };
+		03F79C84174ECEFC009169AB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F79C82174ECEFC009169AB /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,14 +36,14 @@
 		032F20E1174C308200D7C7E6 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		032F20E3174C308200D7C7E6 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		032F20E5174C308200D7C7E6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		032F20EA174C308200D7C7E6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		032F20EA174C308200D7C7E6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		032F20EB174C308200D7C7E6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		032F20F4174C39C700D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		032F20F7174C3DB800D7C7E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		032F20FA174C3DF800D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
-		032F20FF174C441000D7C7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		032F2101174C441500D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		032F2103174C48E300D7C7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		032F20FF174C441000D7C7E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		032F2101174C441500D7C7E6 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		03F79C83174ECEFC009169AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		03F79C85174ECF12009169AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			children = (
 				032F20DE174C308200D7C7E6 /* AppDelegate.h */,
 				032F20DF174C308200D7C7E6 /* AppDelegate.m */,
-				032F20F6174C3DB800D7C7E6 /* MainStoryboard.storyboard */,
+				03F79C82174ECEFC009169AB /* MainStoryboard.storyboard */,
 				032F20F9174C3DF800D7C7E6 /* MainStoryboard.strings */,
 				032F20EA174C308200D7C7E6 /* ViewController.h */,
 				032F20EB174C308200D7C7E6 /* ViewController.m */,
@@ -173,9 +173,9 @@
 				032F20E2174C308200D7C7E6 /* Default.png in Resources */,
 				032F20E4174C308200D7C7E6 /* Default@2x.png in Resources */,
 				032F20E6174C308200D7C7E6 /* Default-568h@2x.png in Resources */,
-				032F20F8174C3DB800D7C7E6 /* MainStoryboard.storyboard in Resources */,
 				032F20FB174C3DF800D7C7E6 /* MainStoryboard.strings in Resources */,
 				032F20FE174C441000D7C7E6 /* Localizable.strings in Resources */,
+				03F79C84174ECEFC009169AB /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,19 +204,11 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		032F20F6174C3DB800D7C7E6 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				032F20F7174C3DB800D7C7E6 /* Base */,
-				032F2103174C48E300D7C7E6 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 		032F20F9174C3DF800D7C7E6 /* MainStoryboard.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				032F20FA174C3DF800D7C7E6 /* fr */,
+				03F79C85174ECF12009169AB /* en */,
 			);
 			name = MainStoryboard.strings;
 			sourceTree = "<group>";
@@ -228,6 +220,14 @@
 				032F2101174C441500D7C7E6 /* fr */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		03F79C82174ECEFC009169AB /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F79C83174ECEFC009169AB /* Base */,
+			);
+			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,6 +330,7 @@
 				032F20F1174C308200D7C7E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
