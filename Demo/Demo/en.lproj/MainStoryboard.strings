@@ -1,0 +1,9 @@
+
+/* Class = "IBUILabel"; text = "Hello World!"; ObjectID = "Mea-oI-L9S"; */
+"Mea-oI-L9S.text" = "Hello World!";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "f1b-zf-yv5"; */
+"f1b-zf-yv5.text" = "";
+
+/* Class = "IBUIButton"; normalTitle = "Change Locale"; ObjectID = "h5E-a1-bey"; */
+"h5E-a1-bey.normalTitle" = "Change Locale";
