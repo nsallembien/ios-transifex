@@ -1,0 +1,12 @@
+[main]
+host = https://www.transifex.com
+
+[ios-transifex-demo.localizablestrings]
+file_filter = Demo/Demo/<lang>.lproj/Localizable.strings
+source_file = Demo/Demo/en.lproj/Localizable.strings
+source_lang = en
+
+[ios-transifex-demo.mainstoryboardstrings]
+file_filter = Demo/Demo/<lang>.lproj/MainStoryboard.strings
+source_file = Demo/Demo/en.lproj/MainStoryboard.strings
+source_lang = en
