@@ -25,51 +25,60 @@ def ask(question, default=""):
     entered = default
     while True:
         entered = raw_input(question)
-        if not entered: break
-        return entered
+        if entered:
+            break
+        elif default:
+            return default
+    return entered
 
 # Ask for values for common variables.
-default = "https://www.transifex.com"
-host = ask("What Transifex URL do you use? (https://www.transifex.com) :", default)
+host = ask("What Transifex URL do you use? (https://www.transifex.com) :", "https://www.transifex.com")
 print("Thanks, Let's use " + host + " for the host.")
 
-default = "en"
-lang = raw_input("What is the source language? (en) : ")
-if not lang:
-	lang = default
-print ("OK! Source language:" + lang)
+source_lang = ask("What is the source language? (en) : ", "en")
+print ("OK! Source language:" + source_lang)
 
-while 
+ 
 project_slug = ask("Enter your project id on Transifex. This is the last path component in the project URL on Transifex: ")
 print("Okay, using " + project_slug + " for this instance.")
 
 # Search in path for files with a .strings suffix and provide a relative path and file name.
 txconfig = ".tx/config"
 if os.path.isfile(txconfig):
-	print("Found an existing Transifex config file. Good to go.")
+    print("Found an existing Transifex config file. Good to go.")
 else:
-	print("There is no Transifex config file. Please run tx init first to create one.")
-	exit()
+    print("There is no Transifex config file. Please run tx init first to create one.")
+    exit()
 
 
 strings_path = "./"
+resource_format = """
+[%s.%s]
+file_filter = %s
+source_file = %s
+source_lang = %s
+"""
 
-f = open(".tx/config",'w')
-f.writelines("[main]\nhost = " + host +"\n\n")
+source_dir = "%s.lproj" % (source_lang)
+
+config_file = open(".tx/config",'w')
+config_file.writelines("[main]\nhost = " + host +"\n\n")
 
 if os.path.isdir(strings_path):
-	for dirpath, dirname, filenames in os.walk(strings_path):
-		for f in filenames:
-			if f.endswith(".strings"):
-				source_strings = os.path.join(dirpath,f)
-				filename = f
-				lang_path = dirpath.replace("en.lproj","<lang>.lproj")
-				lang_strings = os.path.join(lang_path,f)
-                resource_slug = filename.replace(".strings","strings")
-			
-			form = """\n[%s.%s]\nfile_filter = %s\nsource_file = %s\nsource_lang = %s\ntype = PO\n""" % (project_slug, resource_slug, f, pot, lang)
+    for dirpath, dirname, filenames in os.walk(strings_path):
+        for filename in filenames:
+            source_strings = ""
+            lang_path = ""
+            lang_strings = ""
+            resource_slug = ""
+            resource = ""
+            if filename.endswith(".strings") and source_dir in dirpath :
+                source_strings = os.path.join(dirpath, filename)
+                lang_path = dirpath.replace(source_dir, "<lang>.lproj")
+                lang_strings = os.path.join(lang_path, filename)
+                resource_slug = filename.replace(".strings", "strings")		
+                resource = resource_format % (project_slug, resource_slug, lang_strings, source_strings, source_lang)
+                config_file.writelines(resource)
 
-			f.writelines(form)
-	
 print ("Transifex config file written.  Please verify output in .tx/config.")
 exit()
