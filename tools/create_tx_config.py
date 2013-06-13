@@ -57,6 +57,7 @@ resource_format = """
 file_filter = %s
 source_file = %s
 source_lang = %s
+type = STRINGS
 """
 
 source_dir = "%s.lproj" % (source_lang)
