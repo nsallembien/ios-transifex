@@ -8,3 +8,5 @@
 
 
 CURRENT_LOCALE_FORMAT = "Current Locale: %@";
+
+THIS_NEW_CONTENT = "Current Display: %@";

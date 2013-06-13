@@ -41,6 +41,15 @@
                                     <action selector="changeLocale:" destination="2" eventType="touchUpInside" id="HRt-Aq-TE5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello Mike!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ore-Am-nkS">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="HPa-Td-xVi"/>
+                                    <constraint firstAttribute="width" constant="99" id="qia-3n-RKn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +59,8 @@
                             <constraint firstItem="Mea-oI-L9S" firstAttribute="top" secondItem="3" secondAttribute="top" constant="83" id="Lpg-ye-muS"/>
                             <constraint firstItem="h5E-a1-bey" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="74" id="XTi-tb-eJ4"/>
                             <constraint firstItem="Mea-oI-L9S" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="cbu-70-OZf"/>
+                            <constraint firstItem="Ore-Am-nkS" firstAttribute="top" secondItem="3" secondAttribute="top" constant="190" id="ceu-FY-Qih"/>
+                            <constraint firstItem="Ore-Am-nkS" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="139" id="dCh-US-lnX"/>
                             <constraint firstAttribute="bottom" secondItem="f1b-zf-yv5" secondAttribute="bottom" constant="42" id="tlm-yC-ZtS"/>
                             <constraint firstAttribute="trailing" secondItem="Mea-oI-L9S" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="zUS-ZW-3R9"/>
                         </constraints>
@@ -60,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="122" y="-11"/>
+            <point key="canvasLocation" x="-69" y="8"/>
         </scene>
     </scenes>
     <classes>
