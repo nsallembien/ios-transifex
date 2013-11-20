@@ -12,3 +12,5 @@ CURRENT_LOCALE_FORMAT = "Current Locale: %@";
 THIS_NEW_CONTENT = "Current Display: %@";
 
 ANOTHER_KEY = "This is a key";
+
+I_AM_ADDING_STUF = "This is new as a string to Transifex"
