@@ -1,7 +1,6 @@
 [main]
 host = https://www.transifex.com
 
-
 [ios-transifex-demo.InfoPliststrings]
 file_filter = ./Demo/Demo/<lang>.lproj/InfoPlist.strings
 source_file = ./Demo/Demo/en.lproj/InfoPlist.strings
